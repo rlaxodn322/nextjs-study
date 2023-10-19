@@ -1,3 +1,4 @@
+import "./globals.css";
 import { Inter } from "next/font/google";
 
 export const metadata = {
@@ -11,15 +12,15 @@ export default function RootLayout({ children }) {
       <body>
         <h1>
           <a href="/">WEB</a>
-          <ol>
-            <li>
-              <a href="/read/1">html</a>
-            </li>
-            <li>
-              <a href="/read/2">css</a>
-            </li>
-          </ol>
         </h1>
+        <ol>
+          <li>
+            <a href="/read/1">html</a>
+          </li>
+          <li>
+            <a href="/read/2">css</a>
+          </li>
+        </ol>
         {children}
         <ul>
           <li>
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
             <a href="/update/1">Update</a>
           </li>
           <li>
-            <input type="button" value="delete" />
+            <input type="button" value="Delete" />
           </li>
         </ul>
       </body>
